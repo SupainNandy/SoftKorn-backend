@@ -5,7 +5,6 @@ import connectDB from './config/db.js';
 import contactRoutes from './routes/contactRoutes.js';
 import projectRoutes from './routes/projectRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
-import serviceRoutes from './routes/serviceRoutes.js';
 import aboutRoutes from './routes/aboutRoutes.js';
 
 dotenv.config();
@@ -24,7 +23,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/contact', contactRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/admin', adminRoutes);
-app.use('/api/services', serviceRoutes);
 app.use('/api/about', aboutRoutes);
 
 // Root route
